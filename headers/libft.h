@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2025/11/07 17:08:39 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/02/06 15:11:22 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,13 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+typedef struct s_ast
+{
+	void			*content;
+	struct s_ast	*left;
+	struct s_ast	*right;
+}	t_ast;
 
 typedef struct s_tab
 {
@@ -148,6 +155,10 @@ t_list	*lst_map(t_list *head, void *(*f)(void *), void (*del)(void *))
 t_list	*lst_new_node(void *content);
 t_list	*lst_search(t_list *head, void *target, int (*cmp)(void *, void *))
 		__attribute__((nonnull(1, 3)));
+
+// Ast
+
+t_ast	*ast_new_node(void *content);
 
 // Matrix
 void	ft_tab_free(t_tab *tab)
