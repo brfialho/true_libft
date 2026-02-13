@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/02/12 20:21:16 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/02/12 22:07:23 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,13 +152,17 @@ t_list	*lst_last(t_list *head)
 		__attribute__((nonnull(1)));
 t_list	*lst_map(t_list *head, void *(*f)(void *), void (*del)(void *))
 		__attribute__((nonnull(1, 2, 3)));
-t_list	*lst_new_node(void *content);
+t_list	*lst_new_node(void *content)
+		__attribute__((nonnull(1)));
 t_list	*lst_search(t_list *head, void *target, int (*cmp)(void *, void *))
 		__attribute__((nonnull(1, 3)));
 
 // Ast
 
-t_ast	*ast_new_node(void *content);
+t_ast	*ast_new_node(void *content)
+		__attribute__((nonnull(1)));
+void	ast_del_all(t_ast **root, void (*del)(void *))
+		__attribute__((nonnull(1)));
 
 // Matrix
 void	ft_tab_free(t_tab *tab)

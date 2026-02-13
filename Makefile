@@ -76,7 +76,8 @@ SRC = srcs/char/ft_isalnum.c \
 	srcs/printf/ft_count_utils.c \
 	srcs/printf/ft_putnbr_utils.c \
 	srcs/printf/ft_put_utils.c \
-	srcs/ast/ast_new_node.c
+	srcs/ast/ast_new_node.c \
+	srcs/ast/ast_del_all.c
 
 O_DIR = obj/
 
