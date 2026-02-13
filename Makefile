@@ -52,6 +52,7 @@ SRC = srcs/char/ft_isalnum.c \
 	srcs/lst/lst_add_end.c \
 	srcs/lst/lst_add_start.c \
 	srcs/lst/lst_bubble_sort.c \
+	srcs/lst/lst_cut.c \
 	srcs/lst/lst_deep_dup.c \
 	srcs/lst/lst_del_all.c \
 	srcs/lst/lst_del_node.c \
