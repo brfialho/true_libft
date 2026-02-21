@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/02/21 19:56:36 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/02/21 20:02:47 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ typedef unsigned int	t_uint;
 typedef unsigned char	t_uchar;
 typedef unsigned long	t_ulong;
 typedef char			t_bool;
+typedef char			t_int8;
 
 // Structs
 typedef struct s_list
