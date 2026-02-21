@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/02/21 20:02:47 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/02/21 20:45:18 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -217,7 +217,7 @@ char	*ft_strchr(const char *s, int c)
 		__attribute__((nonnull(1)));
 char	*ft_strdup(const char *s)
 		__attribute__((nonnull(1)));
-char	*ft_strjoin_free(char *s1, char *s2);
+char	*ft_strjoin_free(char *s1, char *s2, t_bool free_s1, t_bool free_s2);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strmapi(char const *s, char (*f)(t_uint, char))
 		__attribute__((nonnull(1, 2)));
