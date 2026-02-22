@@ -18,6 +18,7 @@ SRC = srcs/char/ft_isalnum.c \
 	srcs/memory/ft_memcmp.c \
 	srcs/memory/ft_calloc.c \
 	srcs/memory/ft_free.c \
+	srcs/memory/ft_safe_calloc.c \
 	srcs/io/ft_putchar_fd.c \
 	srcs/io/ft_putstr_fd.c \
 	srcs/io/ft_putendl_fd.c \
