@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/03/02 22:17:41 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/03/05 19:47:19 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -203,7 +203,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 // String
 char	**ft_split(char const *s, char c)
 		__attribute__((nonnull(1)));
-char	**ft_split_dup(char **split)
+char	**ft_split_deep_dup(char **split)
 		__attribute__((nonnull(1)));
 void	ft_split_free(char **split)
 		__attribute__((nonnull(1)));

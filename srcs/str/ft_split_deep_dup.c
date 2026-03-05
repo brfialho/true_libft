@@ -6,13 +6,13 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 12:27:23 by brfialho          #+#    #+#             */
-/*   Updated: 2025/10/23 12:45:22 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/03/05 19:47:07 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_split_dup(char **split)
+char	**ft_split_deep_dup(char **split)
 {
 	char	**new;
 	size_t	len;

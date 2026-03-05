@@ -36,7 +36,7 @@ SRC = srcs/char/ft_isalnum.c \
 	srcs/str/ft_substr.c \
 	srcs/str/ft_strtrim.c \
 	srcs/str/ft_split.c \
-	srcs/str/ft_split_dup.c \
+	srcs/str/ft_split_deep_dup.c \
 	srcs/str/ft_split_free.c \
 	srcs/str/ft_split_len.c \
 	srcs/str/ft_split_no_quoted.c \
