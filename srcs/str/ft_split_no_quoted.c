@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 22:14:48 by brfialho          #+#    #+#             */
-/*   Updated: 2026/03/02 22:16:34 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/03/10 22:29:18 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ static int	count_words(char *s, char c)
 
 static char	get_state(char c, t_bool reset)
 {
-	static int state = 0;
+	static int	state = 0;
 
 	if (state && state == c)
 		state = 0;

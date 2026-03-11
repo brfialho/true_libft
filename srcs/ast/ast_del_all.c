@@ -6,13 +6,13 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 22:03:18 by brfialho          #+#    #+#             */
-/*   Updated: 2026/02/12 22:04:18 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/03/10 22:28:06 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void ast_del_all_helper(t_ast *root, void (*del)(void *));
+static void	ast_del_all_helper(t_ast *root, void (*del)(void *));
 
 void	ast_del_all(t_ast **root, void (*del)(void *))
 {
@@ -20,7 +20,7 @@ void	ast_del_all(t_ast **root, void (*del)(void *))
 	*root = NULL;
 }
 
-static void ast_del_all_helper(t_ast *root, void (*del)(void *))
+static void	ast_del_all_helper(t_ast *root, void (*del)(void *))
 {
 	if (root == NULL)
 		return ;
