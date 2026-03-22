@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/03/21 23:57:30 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/03/22 02:15:47 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@
 # endif
 
 # ifndef FAILURE
-#  define FAILURE 0
+#  define FAILURE 1
 # endif
 
 # ifndef BYTE
