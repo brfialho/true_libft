@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/03/05 19:47:19 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/03/21 21:44:41 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -255,6 +255,7 @@ void	ft_dual_quick_sort(int *array, int start, int end)
 
 // Other Projects
 char	*get_next_line(int fd);
+void	gnl_destroy(int fd);
 int		ft_printf(const char *s, ...)
 		__attribute__((nonnull(1)));
 

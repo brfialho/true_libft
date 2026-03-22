@@ -73,6 +73,7 @@ SRC = srcs/char/ft_isalnum.c \
 	srcs/conversion/ft_itoa_base.c \
 	srcs/gnl/get_next_line.c \
 	srcs/gnl/get_next_line_utils.c \
+	srcs/gnl/gnl_destroy.c \
 	srcs/array/ft_dual_quick_sort.c \
 	srcs/array/ft_get_min.c \
 	srcs/array/ft_quick_sort.c \
