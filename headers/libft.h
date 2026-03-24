@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/03/22 02:15:47 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/03/23 23:57:07 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,10 @@
 
 # ifndef BYTE
 #  define BYTE 8
+# endif
+
+# ifndef ASCII
+#  define ASCII 256
 # endif
 
 //typedefs
