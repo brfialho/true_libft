@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/03/23 23:57:07 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/03/24 22:49:57 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 // Includes
 # include <stdlib.h>
 # include <unistd.h>
+# include <sys/time.h>
 
 // Macros
 # ifndef INT_MAX
@@ -264,6 +265,10 @@ int		ft_get_min(int *array, size_t len)
 		__attribute__((nonnull(1)));
 void	ft_dual_quick_sort(int *array, int start, int end)
 		__attribute__((nonnull(1)));
+
+// Time
+
+void	ft_usleep(long usec);
 
 // Other Projects
 char	*get_next_line(int fd);

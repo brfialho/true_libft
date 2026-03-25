@@ -83,7 +83,8 @@ SRC = srcs/char/ft_isalnum.c \
 	srcs/printf/ft_put_utils.c \
 	srcs/ast/ast_new_node.c \
 	srcs/ast/ast_del_all.c \
-	srcs/ast/ast_for_each.c
+	srcs/ast/ast_for_each.c \
+	srcs/time/ft_usleep.c
 
 O_DIR = obj/
 
