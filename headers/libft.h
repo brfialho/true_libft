@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/03/24 22:49:57 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/04/06 13:35:16 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -269,6 +269,7 @@ void	ft_dual_quick_sort(int *array, int start, int end)
 // Time
 
 void	ft_usleep(long usec);
+long	ft_get_deltat(struct timeval *start);
 
 // Other Projects
 char	*get_next_line(int fd);
