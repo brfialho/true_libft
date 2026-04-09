@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/09 20:06:00 by brfialho          #+#    #+#             */
-/*   Updated: 2026/04/09 20:32:28 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/04/09 20:54:13 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ void	*ft_realloc(void *ptr, size_t old_size, size_t size)
 		return (malloc(size));
 	if (!size)
 		return (free(ptr), NULL);
-
 	new = malloc(size);
 	if (!new)
 		return (NULL);
