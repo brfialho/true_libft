@@ -48,14 +48,15 @@ SRC = srcs/char/ft_isalnum.c \
 	srcs/char/ft_toupper.c \
 	srcs/char/ft_tolower.c \
 	srcs/char/ft_isnumspace.c \
-	srcs/memory/ft_memset.c \
 	srcs/memory/ft_bzero.c \
-	srcs/memory/ft_memcpy.c \
-	srcs/memory/ft_memmove.c \
-	srcs/memory/ft_memchr.c \
-	srcs/memory/ft_memcmp.c \
 	srcs/memory/ft_calloc.c \
 	srcs/memory/ft_free.c \
+	srcs/memory/ft_memchr.c \
+	srcs/memory/ft_memcmp.c \
+	srcs/memory/ft_memcpy.c \
+	srcs/memory/ft_memmove.c \
+	srcs/memory/ft_memset.c \
+	srcs/memory/ft_realloc.c \
 	srcs/memory/ft_safe_calloc.c \
 	srcs/io/ft_putchar_fd.c \
 	srcs/io/ft_putstr_fd.c \

@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/04/06 13:35:16 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/04/09 20:33:34 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -200,6 +200,7 @@ t_tab	*ft_tab_init_fields(t_tab *tab, size_t rows, size_t cols, size_t e_size)
 void	ft_bzero(void *s, size_t n)
 		__attribute__((nonnull(1)));
 void	*ft_calloc(size_t nmemb, size_t size);
+void	*ft_realloc(void *ptr, size_t old_size, size_t size);
 void	*ft_safe_calloc(size_t nmemb, size_t size);
 void	*ft_memchr(const void *s, int c, size_t n)
 		__attribute__((nonnull(1)));
