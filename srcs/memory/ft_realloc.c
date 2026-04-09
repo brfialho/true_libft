@@ -1,0 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_realloc.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/09 20:06:00 by brfialho          #+#    #+#             */
+/*   Updated: 2026/04/09 20:14:24 by brfialho         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	*ft_realloc(void *ptr, size_t size)
+{
+	void	*new;
+
+	if (!ptr)
+		return (malloc(size));
+	if (!size)
+		return (free(ptr), NULL);
+
+	new = malloc(size);
+	if (!new)
+		return (NULL);
+	ft_memcpy(new, ptr, size);
+}
