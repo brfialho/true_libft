@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/04/09 20:33:34 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/04/09 20:47:47 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -175,7 +175,6 @@ t_list	*lst_search(t_list *head, void *target, int (*cmp)(void *, void *))
 		__attribute__((nonnull(1, 3)));
 
 // Ast
-
 t_ast	*ast_new_node(void *content)
 		__attribute__((nonnull(1)));
 void	ast_del_all(t_ast **root, void (*del)(void *))
@@ -236,7 +235,8 @@ char	*ft_strchr(const char *s, int c)
 		__attribute__((nonnull(1)));
 char	*ft_strdup(const char *s)
 		__attribute__((nonnull(1)));
-char	*ft_strjoin_free(char *s1, char *s2, t_bool free_s1, t_bool free_s2);
+char	*ft_strjoin_free(char *s1, char *s2, t_bool free_s1, t_bool free_s2)
+		__attribute__((nonnull(1, 2)));
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strmapi(char const *s, char (*f)(t_uint, char))
 		__attribute__((nonnull(1, 2)));
@@ -259,7 +259,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 size_t	ft_strlen(const char *s);
 
 // Array
-
 void	ft_quick_sort(int *array, int start, int end)
 		__attribute__((nonnull(1)));
 int		ft_get_min(int *array, size_t len)
@@ -268,7 +267,6 @@ void	ft_dual_quick_sort(int *array, int start, int end)
 		__attribute__((nonnull(1)));
 
 // Time
-
 void	ft_usleep(long usec);
 long	ft_get_deltat(struct timeval *start);
 
