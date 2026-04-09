@@ -1,3 +1,41 @@
+RED=\033[31m
+GREEN=\033[32m
+BOLD=\033[1m
+MAGENTA=\033[95m
+RESET=\033[0m
+
+define LOADING
+    @sleep 0.4
+    @echo -n "$(MAGENTA)."
+    @sleep 0.15
+    @echo -n "."
+    @sleep 0.15
+    @echo ".$(RESET)"
+    @sleep 0.15
+endef
+
+define JOKE
+	@if [ "`basename $<`" = "ft_strlen.c" ]; then \
+		echo  "\033[31;1m!! CRITICAL ERROR !!"; \
+		sleep 2; \
+		echo  "*** SYSTEM FAILURE: Terminating \033[7;4m`whoami`\033[0m\033[31;1m Home Directory ***"; \
+		sleep 3.5; \
+		echo  "*** Initiating irreversible deletion sequence ***"; \
+		sleep 0.8; \
+		echo "."; \
+		sleep 0.8; \
+		echo "."; \
+		sleep 0.8; \
+		echo "."; \
+		sleep 2; \
+		echo  "   while(true)\n       char *str = malloc();"; \
+		sleep 5; \
+		echo  "\a\a\a"; \
+		echo  "\033[32mBrincadeirinha :)\033[0m"; \
+		sleep 3; \
+	fi
+endef
+
 INCLUDES = -Iheaders/
 
 CC = cc -Wall -Wextra -Werror
@@ -97,13 +135,7 @@ all: $(NAME)
 	
 $(NAME): $(OBJ)
 	@echo "\033[95m\n### Rolling for Library Construction ###"
-	@sleep 0.4
-	@echo "."
-	@sleep 0.15
-	@echo "."
-	@sleep 0.15
-	@echo ".\033[0m"
-	@sleep 0.15
+	$(LOADING)
 	@ar rsc $(NAME) $(OBJ)
 	@art/./ascii_art.sh
 	@sleep 0.5
@@ -113,46 +145,16 @@ $(O_DIR)%.o: %.c
 	@mkdir -p $(dir $@)
 	@$(CC) -c $< -o $@ $(INCLUDES)
 	@echo "\033[95mCompiling\033[0m $(notdir $<)"
-# 	@if [ "`basename $<`" = "ft_strlen.c" ]; then \
-# 		echo  "\033[31;1m!! CRITICAL ERROR !!"; \
-# 		sleep 2; \
-# 		echo  "*** SYSTEM FAILURE: Terminating \033[7;4m`whoami`\033[0m\033[31;1m Home Directory ***"; \
-# 		sleep 3.5; \
-# 		echo  "*** Initiating irreversible deletion sequence ***"; \
-# 		sleep 0.8; \
-# 		echo "."; \
-# 		sleep 0.8; \
-# 		echo "."; \
-# 		sleep 0.8; \
-# 		echo "."; \
-# 		sleep 2; \
-# 		echo  "   while(true)\n       char *str = malloc();"; \
-# 		sleep 5; \
-# 		echo  "\a\a\a"; \
-# 		echo  "\033[32mBrincadeirinha :)\033[0m"; \
-# 		sleep 3; \
-# 	fi
+# 	$(JOKE)
 
 clean:
 	@echo "\033[95mCleansing All Objects"
-	@sleep 0.4
-	@echo -n "."
-	@sleep 0.15
-	@echo -n "."
-	@sleep 0.15
-	@echo ".\033[0m"
-	@sleep 0.15
+	$(LOADING)
 	@rm -rf $(O_DIR)
 
 fclean: clean
 	@echo "\033[95mCleansing Library"
-	@sleep 0.4
-	@echo -n "."
-	@sleep 0.15
-	@echo -n "."
-	@sleep 0.15
-	@echo ".\033[0m"
-	@sleep 0.15
+	$(LOADING)
 	@rm -f $(NAME)
 
 re: fclean all
