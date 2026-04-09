@@ -50,7 +50,6 @@ SRC = srcs/char/ft_isalnum.c \
 	srcs/char/ft_isnumspace.c \
 	srcs/memory/ft_bzero.c \
 	srcs/memory/ft_calloc.c \
-	srcs/memory/ft_free.c \
 	srcs/memory/ft_memchr.c \
 	srcs/memory/ft_memcmp.c \
 	srcs/memory/ft_memcpy.c \
