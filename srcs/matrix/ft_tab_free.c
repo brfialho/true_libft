@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tab_free.c                                      :+:      :+:    :+:   */
+/*   ft_tab_free_content.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/23 13:27:13 by brfialho          #+#    #+#             */
-/*   Updated: 2025/10/23 13:28:50 by brfialho         ###   ########.fr       */
+/*   Created: 2025/10/22 14:25:35 by brfialho          #+#    #+#             */
+/*   Updated: 2026/04/09 21:04:08 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_tab_free(t_tab *tab)
 {
-	ft_tab_free_content(tab);
-	free (tab);
+	while (tab->rows)
+		free(tab->tab[--tab->rows]);
+	free(tab->tab);
+	tab->tab = NULL;
 }

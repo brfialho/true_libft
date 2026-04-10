@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 14:26:42 by brfialho          #+#    #+#             */
-/*   Updated: 2025/10/23 15:04:45 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/04/09 21:04:35 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_tab	*ft_tab_init_alloc(t_tab *tab, size_t rows, size_t cols, size_t e_size)
 		tab->rows = i;
 		tab->tab[i] = ft_calloc(cols + 1, e_size);
 		if (!tab->tab[i])
-			return (ft_tab_free_content(tab), NULL);
+			return (ft_tab_free(tab), NULL);
 		i++;
 	}
 	tab->rows = i;

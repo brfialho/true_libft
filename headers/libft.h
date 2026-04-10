@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/04/09 20:49:09 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/04/09 21:04:15 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -184,8 +184,6 @@ void	ast_for_each(t_ast *root, void (*f)(void *))
 
 // Matrix
 void	ft_tab_free(t_tab *tab)
-		__attribute__((nonnull(1)));
-void	ft_tab_free_content(t_tab *tab)
 		__attribute__((nonnull(1)));
 t_tab	*ft_tab_dup(t_tab tab);
 t_tab	*ft_tab_init_alloc(t_tab *tab, size_t rows, size_t cols, size_t e_size)
