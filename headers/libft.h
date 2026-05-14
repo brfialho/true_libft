@@ -6,7 +6,7 @@
 /*   By: brfialho <brfialho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:45:30 by brfialho          #+#    #+#             */
-/*   Updated: 2026/04/09 21:04:15 by brfialho         ###   ########.fr       */
+/*   Updated: 2026/05/14 15:37:43 by brfialho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,6 @@ typedef struct s_tab
 // For example, NULL inputs are gracefully handled in the following cases:
 //
 // lst_new_node     -> Allows initializing a node with NULL content
-// ft_free          -> Frees and nullifies pointer if not NULL
 // ft_split_len     -> Returns 0 for NULL input
 // ft_str_join      -> Allows joining when one string is NULL
 // ft_str_join_free -> Same as above
