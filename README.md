@@ -7,28 +7,32 @@
 
 ---
 
-# Libft — My Personal Library
+# Libft — My Personal C Library
 
 ## Introduction
 
-This is the library I used in many of my 42 projects, and it has evolved with me along the cursus. It reflects my own preferences and design philosophies, alongside many extra features and changes.
+This is the library I use throughout many of my 42 projects. It has evolved alongside me during the cursus and reflects both my programming preferences and design philosophy, while also including many additional utilities and improvements over the original subject.
 
 ## Design philosophy
 
-Many of the functions were changed to be unsafe or cause premature segfaults in case of incorrect usage. The idea is that the programmer has the responsibility of not using the functions when they should not be used. Also, passing a NULL where it should not be will cause a segfault, which is easy to track, debug, and fix. I always try to move the responsibility to the caller, and my code aims to be as modular as possible.
+Many functions in this library intentionally avoid defensive checks and may segfault on incorrect usage. The idea is that the caller is responsible for ensuring valid input and correct usage.
+
+For example, passing a NULL pointer to a function that does not expect one will typically result in an immediate segfault — something that is usually straightforward to track, debug, and fix during development.
+
+I always try to move the responsibility to the caller, and my code aims to be as modular as possible.
 
 ## Extra features
 
-In comparison to the vanilla libft, this one has a lot more to offer, such as:
+Compared to the vanilla libft, this version includes many additional features, such as:
 
-- Macros for convenience
+- Convenience macros
 - Custom typedefs to help with line length as per 42 Norm
 - Extra linked list functions
-- Extra string functions
+- Extra string manipulation functions
 - A generic matrix set of functions
-- The printf and get_next_line projects
-- Basic functions for AST
-- Some sorting functions for int arrays
+- Integrated ft_printf and get_next_line
+- Basic AST helper functions
+- Sorting utilities for integer arrays
 - Time helper functions
 
 ## Instructions
@@ -45,7 +49,7 @@ Available build targets:
 - `make` - Compile the entire project
 - `make clean` - Remove object files
 - `make fclean` - Remove all generated files
-- `make re` - Clean and rebuild everything
+- `make re` - Rebuild library from scratch
 
 Example:
 
@@ -53,7 +57,7 @@ Example:
 make
 ```
 
-This creates:
+This generates:
 
 ```
 libft.a
@@ -67,7 +71,7 @@ libft.a
 
 ### 2. Compile your project linking against it
 
-Note: the commands below assume you are compiling from the libft root folder. If libft is in a subfolder (e.g., libs/libft/), adjust the -I and -L paths accordingly
+Note: the commands below assume you are compiling from the libft root directory. If libft is in a subfolder (e.g., libs/libft/), adjust the include -I and library -L paths accordingly
 
 ```bash
 cc main.c -I./headers -L. -lft
@@ -78,3 +82,5 @@ Or:
 ```bash
 cc main.c -I./headers libft.a
 ```
+
+
