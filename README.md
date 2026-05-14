@@ -30,7 +30,7 @@ Compared to the vanilla libft, this version includes many additional features, s
 - Extra linked list functions
 - Extra string manipulation functions
 - A generic matrix set of functions
-- Integrated ft_printf and get_next_line
+- Integrated `ft_printf` and `get_next_line`
 - Basic AST helper functions
 - Sorting utilities for integer arrays
 - Time helper functions
@@ -82,5 +82,3 @@ Or:
 ```bash
 cc main.c -I./headers libft.a
 ```
-
-
